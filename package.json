@@ -1,0 +1,20 @@
+{
+  "name": "todoappnodeexpress",
+  "version": "1.0.0",
+  "description": "Basic to do app ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon .",
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
+  },
+  "author": "nilas",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1"
+  }
+}

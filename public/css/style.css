@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+  }
+  .container {
+    position: relative;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/s3.studytonight.com/tutorials/uploads/pictures/1627476216-101156.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    filter: blur(8px); /* Adding blur background image */
+  }
+  .text {
+    text-align: center;
+    position: absolute;
+    left : 30%;
+    top: 30%;
+    width: 50%;
+    background-color: rgba(256 , 256,256,0.5);
+    font-size: 30px;
+  }	
