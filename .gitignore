@@ -1,3 +1,4 @@
 node_modules/
 
 service/data.js
+/.env
