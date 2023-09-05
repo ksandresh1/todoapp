@@ -1,15 +1,15 @@
 const {Schema, model} = require('mongoose');
-const commonSchema = require("../common/commonSchema");
+const commonSchema = require("../commons/commonSchema");
 
 const todoSchema = new Schema({
     title:{
         type:String, 
-        require: true
+        required: true
     },
     status: {
         type: String,
         enum: ["pending","completed"],
-          require: true,
+        required: true,
         default: "pending"
     },
    ... commonSchema

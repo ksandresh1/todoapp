@@ -7,16 +7,6 @@ const create = async (payload) =>{
     return await Model.create(payload);    
 };
 
-//Read data in the database;
-const readAllData = async() =>{
-    return await Model.find();
-};
-
-//Read one data from the database;
-const readOneDataByID = async(id) =>{
-    return await Model.findOne({_id:id});
-}
-
 //Update data in the database;
 const updateDataByID = async(id, payload)=>{
     return await Model.findByIdAndUpdate(id,payload,{new:true});   
@@ -29,4 +19,4 @@ const deleteDataById = async(id)=>{
 
 
 
-module.exports = {create, readAllData, readOneDataByID, updateDataByID, deleteDataById};
+module.exports = {create, updateDataByID, deleteDataById};

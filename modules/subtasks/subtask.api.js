@@ -21,17 +21,6 @@ try{
 }
 })
 
-//get one data using id form the database 
-router.get("/:id", async(req,res,next)=>{
-try{
-    const{id} = req.params;
-    const result = await subtaskController.readOneDataByID(id);
-    res.json({'data':result,"msg":"sucessful"});
-}catch(err){
-    next(err);
-}    
-})
-
 // update data using id 
 router.put("/:id", async(req,res,next)=>{
     try{
