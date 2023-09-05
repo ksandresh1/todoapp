@@ -5,7 +5,7 @@ const database = async ()=>{
   try{
   console.log("[+]Connecting to database......")
   const a = await dbconnect.connect(url);
-  console.log("[+] Connection sucessful !!!");
+  console.log("[+] Connection successful !!!");
   }catch (err){
     console.log("[+] Error conecting database: "+ err);
   }
