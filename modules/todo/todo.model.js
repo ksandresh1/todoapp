@@ -1,20 +1,18 @@
 const {Schema, model} = require('mongoose');
+const commonSchema = require("../common/commonSchema");
 
 const todoSchema = new Schema({
     title:{
         type:String, 
-        require:true
+        require: true
     },
     status: {
         type: String,
         enum: ["pending","completed"],
-        require: true,
+          require: true,
         default: "pending"
     },
-    created_at: {
-        type: Date,
-        default: Date.now()
-    }
+   ... commonSchema
 });
 
 module.exports = model("Todo", todoSchema);
