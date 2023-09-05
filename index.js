@@ -2,15 +2,9 @@ require("dotenv").config();
 const express = require('express');
 const indexRouter = require('./routes');
 const PORT = +process.env.PORT || 3333;
-const {database} = require("./service/database");
+const {database} = require("./service/databaseconnection");
 //setting up app;
 const app = express();
-
-
-
-//setting ejs
-app.set("view engine","ejs");
-app.set("views","./views");
 
 //setting static 
 app.use(express.static('public'));

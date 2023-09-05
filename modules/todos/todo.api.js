@@ -20,17 +20,6 @@ router.get("/",async(req,res,next)=>{
     }
 });
 
-router.get("/:id",async(req,res,next)=>{
-    try{
-        const {id} = req.params;
-        const result = await todoController.getDataByID(id);
-        res.json({"data":result,"msg":"Sucessful"});
-    
-    }catch(err){
-        next(err);
-    }
-})
-
 router.put("/:id",async(req,res,next)=>{
     try{
         const {id} = req.params;
@@ -40,6 +29,7 @@ router.put("/:id",async(req,res,next)=>{
         next(err);
     }
 })
+
 router.delete("/:id",async(req,res,next)=>{
     try{
         const {id} = req.params;
